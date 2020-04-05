@@ -23,4 +23,5 @@
 #### 集群提供者
 ![image](./doc/res/031.png)
 
-### 4、
+### 4、在服务消费者端添加 Hystrix 服务容错处理
+![image](./doc/res/04.png)
