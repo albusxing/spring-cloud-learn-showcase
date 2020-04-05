@@ -12,7 +12,7 @@
 
 #### 2-1 单机 Eureka
 
-![image](./doc/res/02.png)
+![image](doc/res/020.png)
 
 #### 2-2 集群 Eureka
 ![image](./doc/res/021.png)
