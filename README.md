@@ -17,8 +17,8 @@
 #### 2-2 集群 Eureka
 ![image](./doc/res/021.png)
 
-### 3、
+### 3、使用 Feign 实现实现消费者对提供者的调用(Eureka 注册中心)
 
-
+![image](./doc/res/03.png)
 
 ### 4、
