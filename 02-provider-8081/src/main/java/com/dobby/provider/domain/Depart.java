@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 /**
  * 默认情况下，Hibernate 对所有对象的查询采用了延迟加载策略，
@@ -19,7 +18,7 @@ import java.io.Serializable;
 // 指定忽略的属性
 // hibernate 在获取对象的时候，使用了懒加载，转换成json的时候会出现错误（getById 出错，listAll没有出错）
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "fieldHandler"})
-public class Depart implements Serializable {
+public class Depart {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,7 +27,3 @@ public class Depart implements Serializable {
     private String dbase;
 
 }
-
-
-
-
