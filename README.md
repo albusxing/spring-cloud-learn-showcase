@@ -25,3 +25,8 @@
 
 ### 4、在服务消费者端添加 Hystrix 服务容错处理
 ![image](./doc/res/04.png)
+
+### 5、添加 Zuul 网关
+添加了 Zuul 网关后，消费者接口(http://localhost:8080/consumer/depart/list)
+可使用(http://zuulgateway.com:9000/04-consumer-feign-hystrix-8080/consumer/depart/list)进行访问。
+![image](./doc/res/05.png)
