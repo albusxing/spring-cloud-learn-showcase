@@ -1,6 +1,7 @@
 package com.dobby.consumer.service;
 
 import com.dobby.consumer.bean.Depart;
+import com.dobby.consumer.config.AppConfig;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +12,7 @@ import java.util.List;
  *              使用 value 指定要调用的服务的名称
  * @RequestMapping : 使用 RequestMapping 指定需要调用的提供者的接口url
  */
-@FeignClient(value = "03-provider-8081")
+@FeignClient(value = "03-provider-8081", configuration = AppConfig.class)
 @RequestMapping("/provider/depart")
 public interface DepartServiceClient {
 
