@@ -23,6 +23,10 @@
         <module>02-provider-8081</module>
         <module>02-consumer-8080</module>
 
+        <module>03-provider-8081</module>
+        <module>03-consumer-feign-8080</module>
+
+
     </modules>
 
 </project>
