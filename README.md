@@ -7,18 +7,20 @@
 
 
 ### 2、添加 Eureka 注册中心，通过 Eureka 实现消费者对提供者的调用。
-
 服务消费者和提供者启动后，将服务注册到 Eureka 中，消费者通过在 Eureka 中查询服务来调用提供者。
 
-#### 2-1 单机 Eureka
-
+#### 单机 Eureka
 ![image](doc/res/020.png)
 
-#### 2-2 集群 Eureka
+#### 集群 Eureka
 ![image](./doc/res/021.png)
 
 ### 3、使用 Feign 实现实现消费者对提供者的调用(Eureka 注册中心)
 
+#### 单一提供者
 ![image](./doc/res/03.png)
+
+#### 集群提供者
+![image](./doc/res/031.png)
 
 ### 4、
