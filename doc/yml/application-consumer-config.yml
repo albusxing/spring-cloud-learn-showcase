@@ -1,0 +1,42 @@
+# 开发环境
+server:
+  port: 7070
+
+spring:
+  profiles: dev
+  # 指定当前微服务对外暴露的名称
+  application:
+    name: consumer-config
+
+eureka:
+  # 指定eureka服务中心
+  client:
+    service-url:
+      defaultZone: http://eureka8001.com:8001/eureka
+
+# 开启Feign对Hystrix的支持
+feign:
+  hystrix:
+    enabled: true
+
+---
+# 测试环境
+server:
+  port: 9090
+
+spring:
+  profiles: test
+  # 指定当前微服务对外暴露的名称
+  application:
+    name: consumer-config
+
+eureka:
+  # 指定eureka服务中心
+  client:
+    service-url:
+      defaultZone: http://eureka8002.com:8002/eureka
+
+# 开启Feign对Hystrix的支持
+feign:
+  hystrix:
+    enabled: true

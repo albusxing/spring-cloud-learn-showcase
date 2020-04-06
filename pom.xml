@@ -19,6 +19,10 @@
 
         <module>00-zuul-9000</module>
 
+        <module>00-config-server-9999</module>
+
+        <module>00-eureka-server-config</module>
+
         <module>01-provider-8081</module>
         <module>01-consumer-8080</module>
 
@@ -31,6 +35,9 @@
         <module>04-provider-8081</module>
         <module>04-consumer-hystrix-8080</module>
         <module>04-consumer-feign-hystrix-8080</module>
+
+        <module>05-provider-config</module>
+        <module>05-consumer-feign-hystrix-config</module>
 
 
     </modules>
